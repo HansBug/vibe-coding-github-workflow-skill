@@ -10,7 +10,7 @@ The intended skill is not about any specific technical domain such as debugging,
 - create an empty pull request from the upstream issue or umbrella PR;
 - make the PR body executable enough that a developer or agent can follow it with little ambiguity;
 - split large work into sub PRs with task tables and dependency diagrams;
-- run multi-reviewer C/I/M review rounds through GitHub comments;
+- discover the local reviewer pool and run multi-reviewer C/I/M review rounds through GitHub comments;
 - iterate until Critical and Important findings are closed;
 - use CI, tests, and Codecov comments as part of the readiness gate;
 - stop at ready-to-merge and wait for the human maintainer's explicit merge instruction.
@@ -33,6 +33,7 @@ This repository is currently an initial skeleton. The first planning issue will 
     ├── issue-planning-template.md
     ├── pr-body-template.md
     ├── readiness-checklist.md
+    ├── reviewer-discovery.md
     ├── sub-pr-planning.md
     └── reviewer-prompt-template.md
 ```
@@ -46,7 +47,7 @@ The planned skill will help an agentic coding session run a disciplined GitHub w
 1. Read upstream issue/PR context with `gh`.
 2. Draft or validate an issue plan.
 3. Create an empty PR with a contract-first body.
-4. Start reviewer agents or external reviewer processes.
+4. Discover usable reviewer agents or external reviewer processes from the local environment.
 5. Require reviewers to post their own GitHub comments.
 6. Summarize Critical / Important / Minor findings.
 7. Update issue or PR body until C/I findings are resolved.

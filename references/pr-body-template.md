@@ -40,10 +40,11 @@ Use this when creating an empty contract-first pull request.
 ```mermaid
 flowchart TD
     ISSUE[上游 issue] --> PLAN[Empty PR contract]
-    PLAN --> REVIEW[三路 plan review]
+    PLAN --> DISCOVER[Discover reviewer pool]
+    DISCOVER --> REVIEW[Plan review comments]
     REVIEW --> IMPL[实现]
     IMPL --> CI[CI / Codecov]
-    CI --> IMPL_REVIEW[三路实现 review]
+    CI --> IMPL_REVIEW[Implementation review comments]
     IMPL_REVIEW --> READY[Ready, 等待 maintainer]
 ```
 
@@ -53,8 +54,14 @@ flowchart TD
 
 ## Reviewer 协议
 
+## Reviewer Pool
+
+| reviewer | executor / mechanism | detected by | role | status |
+|---|---|---|---|---|
+
 ## Ready Gate
 
+- [ ] Reviewer pool discovery recorded
 - [ ] Plan review C/I = 0
 - [ ] Tests pass
 - [ ] CI pass

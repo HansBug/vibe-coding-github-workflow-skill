@@ -39,6 +39,11 @@ flowchart TD
 
 ## Reviewer 协议
 
+## Reviewer Pool Discovery
+
+| reviewer | executor / mechanism | detected by | role | status |
+|---|---|---|---|---|
+
 ## 准出标准
 
 ## 当前状态

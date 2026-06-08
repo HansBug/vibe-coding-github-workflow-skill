@@ -10,7 +10,7 @@
 - 从上游 issue 或 umbrella PR 创建 empty PR；
 - 让 PR body 具备足够强的计划性、可执行性和准出标准；
 - 对较大任务拆 sub PR，并维护任务表与依赖图；
-- 通过 GitHub comments 运行多 reviewer 的 C/I/M 分级 review；
+- 先发现本地可用 reviewer pool，再通过 GitHub comments 运行多 reviewer 的 C/I/M 分级 review；
 - 迭代到 Critical / Important 问题全部关闭；
 - 把 CI、测试和 Codecov comment 纳入 ready gate；
 - 最终停在 ready-to-merge，等待 human maintainer 明确合并指示。
@@ -33,6 +33,7 @@
     ├── issue-planning-template.md
     ├── pr-body-template.md
     ├── readiness-checklist.md
+    ├── reviewer-discovery.md
     ├── sub-pr-planning.md
     └── reviewer-prompt-template.md
 ```
@@ -46,7 +47,7 @@
 1. 用 `gh` 读取上游 issue / PR 上下文。
 2. 起草或审查 issue 计划。
 3. 创建 contract-first 的 empty PR。
-4. 启动 reviewer agent 或外部 reviewer 进程。
+4. 从本地环境发现可用 reviewer agent 或外部 reviewer 进程。
 5. 要求 reviewer 自行发布 GitHub comment。
 6. 汇总 Critical / Important / Minor 问题。
 7. 更新 issue 或 PR body，直到 C/I 清零。

@@ -1,6 +1,6 @@
 # Reviewer Prompt Template
 
-Use this when starting reviewer agents or external reviewer processes.
+Use this after reviewer discovery, when starting selected reviewer agents or external reviewer processes.
 
 ## Prompt
 
@@ -28,6 +28,7 @@ Use this when starting reviewer agents or external reviewer processes.
 
 ## Placeholder Rules
 
-- `<IDENTITY>` is filled by the orchestrating maintainer or agent before the reviewer starts, for example `reviewer A`, `codex reviewer`, or `external reviewer`.
+- `<IDENTITY>` is filled by the orchestrating maintainer or agent before the reviewer starts, for example `reviewer A`, `native-spawn reviewer`, or `external CLI reviewer`.
 - `<TIME_LIMIT>` is filled by the orchestrating maintainer or agent based on task size.
 - Tool and executor names describe the current review setup only; they should not become core skill requirements.
+- Reviewer selection must come from the discovered local reviewer pool, not from a hardcoded list.

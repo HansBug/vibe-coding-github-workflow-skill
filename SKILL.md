@@ -23,7 +23,7 @@ This skill is a WIP skeleton. It defines the intended collaboration protocol for
    - dependency graph;
    - test and CI plan;
    - readiness gate.
-6. Run multi-reviewer C/I/M review through GitHub comments.
+6. Discover the available reviewer pool for the current environment, then run multi-reviewer C/I/M review through GitHub comments.
 7. Fix all C/I issues before implementation or readiness.
 8. During implementation, follow the target repository's own test and verification conventions.
 9. Treat CI and Codecov comments as review inputs.
@@ -47,6 +47,7 @@ Use formal PR reviews as additional data, not the only data.
 
 - For issue planning, read `references/issue-planning-template.md`.
 - For PR bodies, read `references/pr-body-template.md`.
+- For reviewer discovery and executor selection, read `references/reviewer-discovery.md`.
 - For reviewer prompts, read `references/reviewer-prompt-template.md`.
 - For comment-first review state, read `references/comment-review-protocol.md`.
 - For sub PR split planning, read `references/sub-pr-planning.md`.

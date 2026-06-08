@@ -17,6 +17,17 @@ The filename `CLAUDE.md` is used for client auto-discovery compatibility. These 
 - M findings should be fixed when cheap, but must not cause unnecessary churn.
 - Do not merge pull requests without explicit human maintainer instruction.
 
+## Reviewer Discovery
+
+Reviewer identities and executors are not fixed. Before starting a review round, discover what this environment can actually run:
+
+- use native subagent/spawn mechanisms when the current client exposes them;
+- if a `$sub-agents`-style skill is available, list its configured agents and use suitable entries;
+- probe common local reviewer CLIs such as `codex`, `claude`, `codex-deepseek`, `gemini`, or `cursor-agent` with `command -v`;
+- prefer each tool's native agent mode when it exists, for example Codex local spawn/subagent support or Claude's own agent capability;
+- use wrappers such as `codex-deepseek` only when the user requested them or the command is detected locally;
+- record the selected reviewer pool and any unavailable candidates in the issue or PR comment trail.
+
 ## Reviewer Protocol
 
 When asked to review an issue or PR:

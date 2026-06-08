@@ -6,6 +6,7 @@ Planned scope:
 
 - issue planning readiness;
 - empty PR contract readiness;
+- reviewer pool discovery and selected-executor record;
 - plan review readiness;
 - implementation review readiness;
 - CI, test, and Codecov readiness;
