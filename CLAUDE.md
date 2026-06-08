@@ -2,6 +2,8 @@
 
 This repository is a WIP skill repository for a standardized multi-agent vibe coding workflow over GitHub issues and pull requests.
 
+The filename `CLAUDE.md` is used for client auto-discovery compatibility. These instructions are not Claude-specific; `AGENTS.md` links to the same file for clients that use that convention.
+
 ## Operating Rules
 
 - Use `main` as the only initialized branch unless a human maintainer explicitly asks for another branch.

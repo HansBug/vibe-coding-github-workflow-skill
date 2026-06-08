@@ -29,10 +29,15 @@ This repository is currently an initial skeleton. The first planning issue will 
 ├── AGENTS.md -> CLAUDE.md
 ├── SKILL.md
 └── references/
+    ├── comment-review-protocol.md
     ├── issue-planning-template.md
     ├── pr-body-template.md
+    ├── readiness-checklist.md
+    ├── sub-pr-planning.md
     └── reviewer-prompt-template.md
 ```
+
+`CLAUDE.md` is present because some agent clients auto-discover that filename. The instructions are not Claude-specific; `AGENTS.md` is a symlink to the same content for clients that prefer that convention.
 
 ## Planned Skill
 

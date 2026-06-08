@@ -1,6 +1,6 @@
 ---
 name: vibe-coding-github-workflow
-description: Use when a user wants a standardized multi-agent vibe coding workflow over GitHub: planning in an issue, creating an empty contract-first PR, decomposing large work into sub PRs, running multi-reviewer C/I/M comment rounds, iterating through CI/Codecov-aware readiness, and stopping before merge for maintainer approval.
+description: Use when a user wants a standardized multi-agent vibe coding workflow over GitHub: planning in an issue, creating an empty contract-first PR, decomposing large work into sub PRs, running multi-reviewer C/I/M comment rounds, iterating through CI/Codecov-aware readiness, and stopping before merge for maintainer approval. Do not use when the task is purely local single-agent work without GitHub issue/PR coordination, or when the need is code generation rather than workflow management.
 ---
 
 # GitHub Workflow Review
@@ -25,7 +25,7 @@ This skill is a WIP skeleton. It defines the intended collaboration protocol for
    - readiness gate.
 6. Run multi-reviewer C/I/M review through GitHub comments.
 7. Fix all C/I issues before implementation or readiness.
-8. During implementation, run tests with slow-test skips when the repository defines them.
+8. During implementation, follow the target repository's own test and verification conventions.
 9. Treat CI and Codecov comments as review inputs.
 10. Stop at ready-to-merge and wait for explicit maintainer instruction.
 
@@ -48,5 +48,8 @@ Use formal PR reviews as additional data, not the only data.
 - For issue planning, read `references/issue-planning-template.md`.
 - For PR bodies, read `references/pr-body-template.md`.
 - For reviewer prompts, read `references/reviewer-prompt-template.md`.
+- For comment-first review state, read `references/comment-review-protocol.md`.
+- For sub PR split planning, read `references/sub-pr-planning.md`.
+- For readiness gates, read `references/readiness-checklist.md`.
 
 Load only the template needed for the current task.

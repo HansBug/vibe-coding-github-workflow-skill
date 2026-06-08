@@ -25,3 +25,9 @@ Use this when starting reviewer agents or external reviewer processes.
   - M / Minor：不阻塞。
 - 给出结论：ready / not ready。
 ```
+
+## Placeholder Rules
+
+- `<IDENTITY>` is filled by the orchestrating maintainer or agent before the reviewer starts, for example `reviewer A`, `codex reviewer`, or `external reviewer`.
+- `<TIME_LIMIT>` is filled by the orchestrating maintainer or agent based on task size.
+- Tool and executor names describe the current review setup only; they should not become core skill requirements.

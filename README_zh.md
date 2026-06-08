@@ -29,10 +29,15 @@
 ├── AGENTS.md -> CLAUDE.md
 ├── SKILL.md
 └── references/
+    ├── comment-review-protocol.md
     ├── issue-planning-template.md
     ├── pr-body-template.md
+    ├── readiness-checklist.md
+    ├── sub-pr-planning.md
     └── reviewer-prompt-template.md
 ```
+
+`CLAUDE.md` 这个文件名用于兼容部分 agent 客户端的自动发现约定，内容本身不绑定 Claude；`AGENTS.md` 是指向同一内容的软链接，用于兼容偏好该约定的客户端。
 
 ## 计划建设的 Skill
 
