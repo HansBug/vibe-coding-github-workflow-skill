@@ -27,8 +27,8 @@ Run direct CLI commands from the target repository root unless the CLI command i
 
 | Mechanism | Detect | Typical invocation | Notes |
 |---|---|---|---|
-| Codex native spawn/subagent | Current client exposes a spawn/subagent tool | Use the native spawn API, not a shell REPL | Best fit for Codex reviewers inside Codex-capable sessions. |
-| `$sub-agents` skill | `python /path/to/run_subagent.py --list` | `python /path/to/run_subagent.py --agent <name> --prompt "<task>" --cwd "$PWD" --timeout 600000` | Agent definitions live in `$SUB_AGENTS_DIR` or `<cwd>/.agents/`; supported backends are `claude`, `cursor-agent`, `codex`, and `gemini`. |
+| Codex native spawn/subagent | Current client exposes a spawn/subagent tool | Use the current session's native spawn/subagent tool, not a shell REPL | Best fit for Codex reviewers inside Codex-capable sessions. The exact trigger is client-provided, such as a spawn-agent tool call or a named local subagent entry. |
+| `$sub-agents` skill | `python /path/to/run_subagent.py --list` | `python /path/to/run_subagent.py --agent <name> --prompt "<task>" --cwd "$PWD" --timeout 600000` | Agent definitions live in `$SUB_AGENTS_DIR` or `<cwd>/.agents/`; supported backends are `claude`, `cursor-agent`, `codex`, and `gemini`. Locate the dispatcher from the `$sub-agents` skill body, usually `<skill-dir>/scripts/run_subagent.py`, before copying the command. |
 | Codex CLI | `command -v codex` | `codex exec --json --skip-git-repo-check "<task>"` | For yolo reviewer runs, `$sub-agents` maps this to `codex --dangerously-bypass-approvals-and-sandbox exec --json --skip-git-repo-check "<task>"`. Direct yolo form can also use `codex exec --dangerously-bypass-approvals-and-sandbox --json --skip-git-repo-check "<task>"`. |
 | Claude CLI print mode | `command -v claude` | `claude -p "<task>"` | For structured headless runs, `$sub-agents` uses `claude --output-format stream-json --verbose -p "<task>"`; yolo mode adds `--dangerously-skip-permissions`. |
 | Claude custom agent | `claude --help` shows `--agent` / `--agents` | `claude --agents '{"reviewer":{"description":"Reviews workflow contracts","prompt":"You are a reviewer."}}' --agent reviewer -p "<task>"` | Prefer Claude's own agent capability when available. `claude agents --json --cwd "$PWD"` can inspect background sessions. |
@@ -80,6 +80,8 @@ PROMPT
 ### `$sub-agents` Dispatcher
 
 ```bash
+# Replace this with the absolute script path from the $sub-agents skill body,
+# commonly <skill-dir>/scripts/run_subagent.py.
 python /path/to/run_subagent.py \
   --agent reviewer \
   --prompt "$(cat <<'PROMPT'
