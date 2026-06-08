@@ -23,11 +23,12 @@ This skill is a WIP skeleton. It defines the intended collaboration protocol for
    - dependency graph;
    - test and CI plan;
    - readiness gate.
-6. Discover the available reviewer pool for the current environment, then run multi-reviewer C/I/M review through GitHub comments.
-7. Fix all C/I issues before implementation or readiness.
-8. During implementation, follow the target repository's own test and verification conventions.
-9. Treat CI and Codecov comments as review inputs.
-10. Stop at ready-to-merge and wait for explicit maintainer instruction.
+6. For large tasks, distinguish umbrella PRs from leaf PRs. Keep dependencies and emoji status in tables, draw Mermaid graphs with implementation phases only, and require leaf merge-back updates to the umbrella body and comments.
+7. Discover the available reviewer pool for the current environment, then run multi-reviewer C/I/M review through GitHub comments.
+8. Fix all C/I issues before implementation or readiness.
+9. During implementation, follow the target repository's own test and verification conventions.
+10. Treat CI and Codecov comments as review inputs.
+11. Stop at ready-to-merge and wait for explicit maintainer instruction.
 
 ## Comment-First Review
 
