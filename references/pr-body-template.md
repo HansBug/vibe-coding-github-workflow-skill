@@ -59,6 +59,11 @@ Set the PR type explicitly:
 | 依赖项 | |
 | merge 回填要求 | 更新 umbrella body + 新增 umbrella comment |
 | 禁止越界 | |
+| 完整 leaf 字段集 | 以 `references/sub-pr-planning.md` 的 Leaf PR Body Minimum 为准 |
+
+## Reviewer Challenge
+
+列出本 leaf 或当前 PR 最容易出错的具体点。实现阶段 reviewer 应围绕这些点构造反例或复现命令。
 
 ## 依赖图（只画实施阶段）
 
@@ -122,6 +127,8 @@ flowchart TD
 - [ ] Do not merge until maintainer explicitly instructs
 
 ## Leaf Merge-Back Comment（leaf merge 后贴到 umbrella）
+
+> 使用前必须先更新 umbrella PR body：leaf 行改为 `✅ Done`，记录 merge commit，更新依赖解锁 / 阻塞，更新 Mermaid node label/class。然后再贴下面的 umbrella progress comment。
 
 ```md
 ## PR-X-A merge 回填

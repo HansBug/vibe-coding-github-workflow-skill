@@ -39,8 +39,8 @@ Use this when creating or reviewing the planning issue for a workflow task.
 
 ## Sub PR 拆分建议
 
-| ID | 完成状态 | 主要目标 | 依赖项 | 可并行窗口 | 主要冲突面 | 必过验收 |
-|---|---|---|---|---|---|---|
+| ID | 完成状态 | 建议标题 / branch slug | 主要目标 | 依赖项 | 可并行窗口 | 主要冲突面 | 必过验收 | 验证 / 慢测策略 |
+|---|---|---|---|---|---|---|---|---|
 
 ## 依赖图（只画实施阶段）
 
@@ -90,5 +90,6 @@ flowchart TD
 - The issue has a C/I/M review plan.
 - The issue says who merges or does not merge.
 - Phase and sub PR tables include dependency columns.
+- Issue-level sub PR table columns align with `references/sub-pr-planning.md` and `references/pr-body-template.md`.
 - Status columns use emoji plus short text, not ambiguous prose alone.
 - Mermaid graphs contain implementation phases only.
