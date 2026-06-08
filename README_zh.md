@@ -1,8 +1,8 @@
-# Codex/Claude GitHub 工作流 Skill
+# Vibe Coding GitHub 工作流 Skill
 
 [English README](README.md)
 
-本仓库用于建设一个 Codex / Claude 通用的 GitHub 工作流 skill，目前处于 WIP 初始骨架阶段。
+本仓库用于建设一个依托 GitHub 的 vibe coding 多智能体开发流程标准化 skill，目前处于 WIP 初始骨架阶段。
 
 这个 skill 的目标不是固化某个具体领域的 debug、研究文库维护或实现细节，而是固化一套通用协作协议：
 
@@ -36,7 +36,7 @@
 
 ## 计划建设的 Skill
 
-该 skill 计划帮助 Codex 或 Claude 执行一套纪律化 GitHub 工作流：
+该 skill 计划帮助一次 agentic / vibe coding 开发会话执行一套纪律化 GitHub 工作流：
 
 1. 用 `gh` 读取上游 issue / PR 上下文。
 2. 起草或审查 issue 计划。

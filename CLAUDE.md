@@ -1,6 +1,6 @@
 # Repository Instructions
 
-This repository is a WIP skill repository for a Codex/Claude-compatible GitHub issue and pull request workflow.
+This repository is a WIP skill repository for a standardized multi-agent vibe coding workflow over GitHub issues and pull requests.
 
 ## Operating Rules
 
@@ -27,7 +27,7 @@ When asked to review an issue or PR:
 
 ## Skill Scope
 
-This repository should stay focused on the general GitHub collaboration workflow:
+This repository should stay focused on the general GitHub-backed vibe coding collaboration workflow:
 
 - issue planning;
 - empty PR contract;

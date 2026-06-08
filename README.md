@@ -1,8 +1,8 @@
-# Codex/Claude GitHub Workflow Skill
+# Vibe Coding GitHub Workflow Skill
 
 [中文说明](README_zh.md)
 
-This repository is a work-in-progress home for a Codex/Claude-compatible skill that standardizes a GitHub issue and pull request workflow for agent-assisted development.
+This repository is a work-in-progress home for a skill that standardizes a multi-agent vibe coding workflow over GitHub issues and pull requests.
 
 The intended skill is not about any specific technical domain such as debugging, research corpus maintenance, or package implementation. It focuses on the general collaboration protocol:
 
@@ -36,7 +36,7 @@ This repository is currently an initial skeleton. The first planning issue will 
 
 ## Planned Skill
 
-The planned skill will help Codex or Claude run a disciplined GitHub workflow:
+The planned skill will help an agentic coding session run a disciplined GitHub workflow:
 
 1. Read upstream issue/PR context with `gh`.
 2. Draft or validate an issue plan.

@@ -1,11 +1,11 @@
 ---
-name: github-workflow-review
-description: Use when a user wants a disciplined GitHub issue/PR workflow for agent-assisted work: planning in an issue, creating an empty contract-first PR, decomposing large work into sub PRs, running multi-reviewer C/I/M comment rounds, iterating through CI/Codecov-aware readiness, and stopping before merge for maintainer approval.
+name: vibe-coding-github-workflow
+description: Use when a user wants a standardized multi-agent vibe coding workflow over GitHub: planning in an issue, creating an empty contract-first PR, decomposing large work into sub PRs, running multi-reviewer C/I/M comment rounds, iterating through CI/Codecov-aware readiness, and stopping before merge for maintainer approval.
 ---
 
 # GitHub Workflow Review
 
-This skill is a WIP skeleton. It defines the intended collaboration protocol for Codex/Claude agents working through GitHub issues and pull requests.
+This skill is a WIP skeleton. It defines the intended collaboration protocol for multi-agent vibe coding work coordinated through GitHub issues and pull requests.
 
 ## Core Workflow
 
